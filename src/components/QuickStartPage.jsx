@@ -19,7 +19,7 @@ export const QuickStartPage = ({ setCurrentView }) => {
         {/* Section 2: Sign-up and Login (QS_02.png) */}
         <div className="w-full max-w-[1480px] flex justify-center mb-12 sm:mb-16 md:mb-20">
           <img
-            src="/images/quickstart_section_02_unified.png"
+            src="/images/quickstart_section_02_v2.png"
             alt="BrickSync Start Guide - 2. Sign-up and Login for Student, Teacher, and Parent accounts"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -37,7 +37,7 @@ export const QuickStartPage = ({ setCurrentView }) => {
         {/* Section 4: Try Lessons & AI Lessons (QS_04.png) */}
         <div className="w-full max-w-[1480px] flex justify-center mb-12 sm:mb-16 md:mb-20">
           <img
-            src="/images/quickstart_section_04_unified.png"
+            src="/images/quickstart_section_04_v2.png"
             alt="BrickSync Start Guide - 4. Try Lessons & AI Lessons"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -46,7 +46,7 @@ export const QuickStartPage = ({ setCurrentView }) => {
         {/* Section 5: Connect with LEGO Hub & Block Coding (QS_05.png) */}
         <div className="w-full max-w-[1480px] flex justify-center mb-12 sm:mb-16 md:mb-20">
           <img
-            src="/images/quickstart_section_05_unified.png"
+            src="/images/quickstart_section_05_v2.png"
             alt="BrickSync Start Guide - Connect with LEGO Hub & Block Coding"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -55,7 +55,7 @@ export const QuickStartPage = ({ setCurrentView }) => {
         {/* Section 6: AI Lesson (QS_06.png) */}
         <div className="w-full max-w-[1480px] flex justify-center mb-12 sm:mb-16 md:mb-20">
           <img
-            src="/images/quickstart_section_06_unified.png"
+            src="/images/quickstart_section_06_v2.png"
             alt="BrickSync Start Guide - AI Lesson Gesture, Voice, and Object Recognition"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -64,25 +64,36 @@ export const QuickStartPage = ({ setCurrentView }) => {
         {/* Section 7: Access the Lego Fortnite map (QS_07.png) */}
         <div className="w-full max-w-[1480px] flex justify-center mb-12 sm:mb-16 md:mb-20">
           <img
-            src="/images/quickstart_section_07_unified.png"
+            src="/images/quickstart_section_07_v4.png"
             alt="BrickSync Start Guide - 5. Access the Lego Fortnite map"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
         </div>
 
-        {/* Section 8: Real-time Command Execution Intro (QS_08.png) */}
-        <div className="w-full max-w-[1480px] flex justify-center mb-6 sm:mb-8">
+        {/* Section 8: Real-time Command Execution Intro (pill image + live text) */}
+        <div className="w-full max-w-[1480px] flex flex-col items-center mb-6 sm:mb-8 text-white text-center [container-type:inline-size]">
           <img
-            src="/images/quickstart_section_08_unified.png"
+            src="/images/quickstart_section_08_pill.png"
             alt="BrickSync Start Guide - 6. LEGO Spike, LEGO Fortnite real-time command execution"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
+          <div className="mt-[3.2cqw] text-[1.515cqw] leading-[1.5] font-light sm:whitespace-nowrap">
+            <p>
+              Let&apos;s execute block coding commands written in BrickSync simultaneously in real-time on the LEGO SPIKE kit and LEGO Fortnite 3D assets.
+            </p>
+            <p>
+              For Lessons 1 through 5, pressing the Run button sends command signals to the LEGO Hub and Fortnite, enabling execution.
+            </p>
+            <p>
+              In AI Lessons 6 to 8, command and control LEGO and Fortnite assets using only vision (gesture or object recognition) or voice recognition.
+            </p>
+          </div>
         </div>
 
         {/* Section 9: Real-time Execution Flow (QS_09.png) */}
         <div className="w-full max-w-[1480px] flex justify-center mb-8 sm:mb-12 md:mb-14">
           <img
-            src="/images/quickstart_section_09_unified.png"
+            src="/images/quickstart_section_09_v2.png"
             alt="BrickSync Start Guide - LEGO Education, BrickSync, and LEGO Fortnite execution"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />

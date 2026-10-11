@@ -11,7 +11,7 @@ export const DownloadPage = ({ setCurrentView }) => {
         <div className="w-full max-w-[1480px] flex flex-col items-center pb-14 sm:pb-18 md:pb-24">
           
           {/* Top Download Button: Clean Convex / 3D Embossed White Pill (No Frame Line) */}
-          <div className="w-[88%] max-w-[1302px] mb-6 sm:mb-8 md:mb-10">
+          <div className="w-full mb-6 sm:mb-8 md:mb-10">
             <a
               href="/Bricksync.exe"
               download="Bricksync.exe"
@@ -31,9 +31,9 @@ export const DownloadPage = ({ setCurrentView }) => {
           {/* Main Island Graphic Card */}
           <div className="w-full flex justify-center">
             <img
-              src="/images/download_island_card.png"
-              alt="BrickSync Download - The Brick Island in LEGO Fortnite"
-              className="w-full h-auto object-contain select-none pointer-events-none"
+              src="/images/download_main_v2.jpg"
+              alt="BrickSync Download"
+              className="w-full h-auto object-contain rounded-2xl sm:rounded-3xl select-none pointer-events-none"
             />
           </div>
 
