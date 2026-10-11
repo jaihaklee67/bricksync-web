@@ -38,7 +38,7 @@ export const AboutPage = ({ setCurrentView }) => {
           
           {/* Left overview text + right dashboard/photo collage (single image: about_main_v3.png) */}
           <img
-            src="/images/about_main_v3.png"
+            src="/images/about_main_v3.webp" width="2400" height="1350" decoding="async"
             alt="About BrickSync - What is BrickSync? LEGO SPIKE + LEGO FORTNITE"
             className="absolute inset-0 w-full h-full object-cover object-center select-none pointer-events-none z-10"
           />
@@ -57,7 +57,7 @@ export const AboutPage = ({ setCurrentView }) => {
         {/* Section 2: Core Pillars (heading image + live-text cards) */}
         <div className="w-full max-w-[1440px] flex flex-col items-center pt-6 pb-12 sm:pb-16 px-4 sm:px-8">
           <img
-            src="/images/about_core_header.png"
+            src="/images/about_core_header.png" width="3516" height="291" decoding="async" loading="lazy"
             alt="BrickSync 3 Core Components - Connecting Physical Play and Digital Worlds through AI & Real-Time Computing"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />

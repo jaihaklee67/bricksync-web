@@ -76,7 +76,7 @@ export const EducationPage = ({ setCurrentView }) => {
         {/* Section 2: Education 02 Image */}
         <div className="w-full max-w-[1360px] flex justify-center mb-12 sm:mb-16 md:mb-20">
           <img
-            src="/images/education_section_02_v3.png"
+            src="/images/education_section_02_v3.webp" width="1516" height="1085" decoding="async"
             alt="LEGO Fortnite Education classes and hands-on learning in the classroom"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -95,12 +95,12 @@ export const EducationPage = ({ setCurrentView }) => {
 
         <div className="w-full max-w-[1180px] flex flex-col gap-4 sm:gap-5 mb-16 sm:mb-20 md:mb-24">
           <img
-            src="/images/education_curriculum_1.png"
+            src="/images/education_curriculum_1.webp" width="2000" height="1053" decoding="async" loading="lazy"
             alt="Spark (age 5-7) and Creator (age 8-11) level curriculum examples"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
           <img
-            src="/images/education_curriculum_2.png"
+            src="/images/education_curriculum_2.webp" width="2000" height="1076" decoding="async" loading="lazy"
             alt="Innovator (age 12-14) and Master (age 15+) level curriculum examples"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -132,7 +132,7 @@ export const EducationPage = ({ setCurrentView }) => {
 
         <div className="w-full max-w-[1100px] flex justify-center mb-12 sm:mb-14 md:mb-16">
           <img
-            src="/images/education_camp_cards.png"
+            src="/images/education_camp_cards.webp" width="2000" height="1287" decoding="async" loading="lazy"
             alt="Eight LEGO Fortnite camp lessons: Exploration Boat, Deep Sea Submarine, Spin the Ferris Wheel, Exploration Car, Turn on the Siren, AI Auto Hut, AI Voice Magic Swing and AI Monster Detector"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
@@ -141,7 +141,7 @@ export const EducationPage = ({ setCurrentView }) => {
         {/* Section 4: education_05 Image (3-Column Curriculum Cards) */}
         <div className="w-full max-w-[1440px] flex justify-center pb-20 px-2 sm:px-4">
           <img
-            src="/images/education_section_05.png"
+            src="/images/education_section_05.webp" width="2400" height="1048" decoding="async" loading="lazy"
             alt="LEGO Fortnite Education Curriculum Overview, Short-Term Camp, and After-School Programs"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />

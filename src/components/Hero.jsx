@@ -9,7 +9,7 @@ export const Hero = () => {
         {/* 2. Right-side composition (LEGO SPIKE Ferris wheel + block coding + Fortnite screen): hero_composite.png */}
         <div className="absolute left-[44.5%] top-[22.8%] w-[50%] pointer-events-none select-none z-[3]">
           <img
-            src="/images/hero_composite_v2.png"
+            src="/images/hero_composite_v2.webp" width="2000" height="1303" decoding="async"
             alt="LEGO SPIKE Ferris wheel, block coding and the Fortnite theme park screen"
             className="w-full h-auto object-contain select-none"
           />
@@ -18,7 +18,7 @@ export const Hero = () => {
         {/* 6. Headline Text Graphic: logo_lego_cropped.png */}
         <div className="absolute left-[6.5%] top-[31.0%] w-[40.5%] pointer-events-none select-none z-[4]">
           <img
-            src="/images/logo_lego_cropped.png"
+            src="/images/logo_lego_cropped.png" width="654" height="424" decoding="async"
             alt="The bricks I built with my hands comes to life in the world of Fortnite Island!"
             className="w-full h-auto object-contain select-none"
           />

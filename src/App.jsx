@@ -17,7 +17,7 @@ export default function App() {
         
         {/* 1. Global Full-Bleed Background Image (100% Screen Fill) */}
         <img
-          src="/images/BackGround.png"
+          src="/images/BackGround.webp"
           alt="BrickSync Background"
           className="fixed inset-0 w-full h-full object-cover object-center select-none pointer-events-none z-0"
         />

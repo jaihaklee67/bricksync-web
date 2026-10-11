@@ -31,7 +31,7 @@ export const DownloadPage = ({ setCurrentView }) => {
           {/* Main Island Graphic Card */}
           <div className="w-full flex justify-center">
             <img
-              src="/images/download_main_v2.jpg"
+              src="/images/download_main_v2.jpg" width="1642" height="961" decoding="async"
               alt="BrickSync Download"
               className="w-full h-auto object-contain rounded-2xl sm:rounded-3xl select-none pointer-events-none"
             />
