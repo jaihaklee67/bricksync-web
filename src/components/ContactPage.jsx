@@ -7,8 +7,6 @@ import {
   GraduationCap, 
   Handshake, 
   HelpCircle, 
-  Globe, 
-  Gamepad2, 
   Award, 
   CheckCircle2, 
   User, 
@@ -96,9 +94,9 @@ export const ContactPage = ({ setCurrentView }) => {
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-[42px] font-bold text-white tracking-tight leading-tight mb-3 sm:mb-4">
               Let’s Build the Future of AI Education
             </h1>
-            <div className="text-white/95 text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-relaxed flex flex-col gap-1 sm:gap-1.5">
-              <p>Have questions about school curriculum, teacher training, or educational partnership?</p>
-              <p>Reach out to our certified team and explore the possibilities with BrickSync.</p>
+            <div className="text-white/95 text-xs sm:text-sm md:text-base lg:text-lg font-normal leading-relaxed max-sm:block max-sm:text-balance max-sm:px-1 sm:flex sm:flex-col sm:gap-1.5">
+              <p className="max-sm:inline">Have questions about school curriculum, teacher training, or educational partnership?</p>{' '}
+              <p className="max-sm:inline">Reach out to our certified team and explore the possibilities with BrickSync.</p>
             </div>
           </div>
 
@@ -141,32 +139,6 @@ export const ContactPage = ({ setCurrentView }) => {
                     </div>
                     <Mail className="w-4 h-4 text-slate-400 group-hover:text-[#0066cc] transition-colors" />
                   </a>
-                </div>
-
-                <div className="mt-5 pt-4 border-t border-slate-100 flex flex-col gap-2.5">
-                  <div className="flex items-center justify-between text-xs sm:text-sm text-slate-600">
-                    <span className="flex items-center gap-1.5 text-slate-500">
-                      <Globe className="w-4 h-4 text-sky-600" />
-                      Official Domain
-                    </span>
-                    <a 
-                      href="https://www.bricksync.org" 
-                      target="_blank" 
-                      rel="noopener noreferrer"
-                      className="font-semibold text-[#08326e] hover:underline"
-                    >
-                      www.bricksync.org
-                    </a>
-                  </div>
-                  <div className="flex items-center justify-between text-xs sm:text-sm text-slate-600">
-                    <span className="flex items-center gap-1.5 text-slate-500">
-                      <Gamepad2 className="w-4 h-4 text-amber-500" />
-                      Fortnite Island Code
-                    </span>
-                    <span className="font-mono font-bold text-slate-800 bg-amber-50 px-2 py-0.5 rounded border border-amber-200/60">
-                      7603-2493-0825
-                    </span>
-                  </div>
                 </div>
               </div>
 

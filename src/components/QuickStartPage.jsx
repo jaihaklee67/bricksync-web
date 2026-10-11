@@ -108,7 +108,7 @@ export const QuickStartPage = ({ setCurrentView }) => {
             alt="BrickSync Start Guide - 6. LEGO Spike, LEGO Fortnite real-time command execution"
             className="w-full h-auto object-contain select-none pointer-events-none"
           />
-          <div className="mt-[3.2cqw] text-[1.515cqw] leading-[1.5] font-light sm:whitespace-nowrap">
+          <div className="mt-5 sm:mt-[3.2cqw] px-3 sm:px-0 text-[13.5px] sm:text-[1.515cqw] leading-[1.5] font-light space-y-2.5 sm:space-y-0 text-balance sm:whitespace-nowrap">
             <p>
               Let&apos;s execute block coding commands written in BrickSync simultaneously in real-time on the LEGO SPIKE kit and LEGO Fortnite 3D assets.
             </p>

@@ -58,7 +58,7 @@ export const EducationPage = ({ setCurrentView }) => {
               </p>
             </div>
 
-            <div className="mx-auto mt-[3.4cqw] w-[72%] rounded-[2.2cqw] bg-white px-[4cqw] py-[2.6cqw] shadow-[0_8px_30px_rgba(8,48,110,0.18)]">
+            <div className="mx-auto mt-[3.4cqw] w-[72%] max-sm:w-full max-sm:mt-6 rounded-[2.2cqw] bg-white px-[4cqw] py-[2.6cqw] shadow-[0_8px_30px_rgba(8,48,110,0.18)]">
               <ul className="space-y-[1.2cqw] text-[clamp(12px,1.9cqw,27px)] leading-snug text-black">
                 {OFFERINGS.map(([title, text]) => (
                   <li key={title} className="flex items-start gap-[1.2cqw]">
@@ -93,7 +93,13 @@ export const EducationPage = ({ setCurrentView }) => {
           </p>
         </div>
 
-        <div className="w-full max-w-[1180px] flex flex-col gap-4 sm:gap-5 mb-16 sm:mb-20 md:mb-24">
+        <img
+          src="/images/education_curriculum_m.webp" width="1123" height="2105" decoding="async"
+          alt="Spark, Creator, Innovator and Master level curriculum examples"
+          className="sm:hidden w-full h-auto mb-16 select-none pointer-events-none"
+        />
+
+        <div className="max-sm:hidden w-full max-w-[1180px] flex flex-col gap-4 sm:gap-5 mb-16 sm:mb-20 md:mb-24">
           <img
             src="/images/education_curriculum_1.webp" width="2000" height="1053" decoding="async" loading="lazy"
             alt="Spark (age 5-7) and Creator (age 8-11) level curriculum examples"
