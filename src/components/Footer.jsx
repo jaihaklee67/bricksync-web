@@ -103,14 +103,21 @@ export const Footer = ({ setCurrentView }) => {
             </h4>
             
             {/* Leadership Box */}
-            <div className="p-4 rounded-xl bg-white/5 border border-white/10 mb-4">
-              <div className="flex items-center gap-2 mb-1">
-                <Award className="w-4 h-4 text-amber-400 flex-shrink-0" />
-                <span className="text-xs sm:text-sm font-bold text-white">Cliff Lee & Emma Jeon</span>
+            <div className="flex items-center gap-4 p-3.5 sm:p-4 rounded-xl bg-white/5 border border-white/10 mb-4">
+              <img
+                src="/images/uai_icon.png"
+                width="198"
+                height="200"
+                alt="Unreal Engine"
+                decoding="async"
+                className="w-12 h-12 sm:w-14 sm:h-14 flex-shrink-0 rounded-xl object-contain select-none pointer-events-none"
+              />
+              <div className="min-w-0">
+                <span className="block text-sm sm:text-base font-bold text-white">Cliff Lee & Emma Jeon</span>
+                <p className="mt-1 text-[11px] sm:text-xs text-white/70 leading-relaxed">
+                  Epic Games Certified Unreal Authorized Instructors (UAI)
+                </p>
               </div>
-              <p className="text-[11px] sm:text-xs text-white/70 leading-relaxed pl-6">
-                Epic Games Certified Unreal Authorized Instructors (UAI)
-              </p>
             </div>
 
             {/* Contact Emails */}

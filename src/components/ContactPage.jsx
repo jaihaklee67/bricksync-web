@@ -7,7 +7,6 @@ import {
   GraduationCap, 
   Handshake, 
   HelpCircle, 
-  Award, 
   CheckCircle2, 
   User, 
   Building, 
@@ -140,23 +139,6 @@ export const ContactPage = ({ setCurrentView }) => {
                     <Mail className="w-4 h-4 text-slate-400 group-hover:text-[#0066cc] transition-colors" />
                   </a>
                 </div>
-              </div>
-
-              {/* Card 2: Certified Leadership & Accreditation */}
-              <div className="bg-gradient-to-br from-[#0c2e60] to-[#082046] text-white rounded-2xl md:rounded-3xl p-6 sm:p-7 border border-white/20">
-                <div className="flex items-center gap-2.5 mb-3">
-                  <div className="p-2 rounded-xl bg-amber-400/20 text-amber-300">
-                    <Award className="w-5 h-5" />
-                  </div>
-                  <div>
-                    <h3 className="font-bold text-base sm:text-lg text-white">Certified Leadership</h3>
-                    <p className="text-xs text-amber-300/90 font-medium">Epic Games Authorized</p>
-                  </div>
-                </div>
-                <p className="text-xs sm:text-sm text-slate-200 leading-relaxed">
-                  BrickSync is developed and directed by <strong className="text-white">Cliff Lee & Emma Jeon</strong>, 
-                  Epic Games Certified Unreal Authorized Instructors (UAI) dedicated to next-generation Phygital STEM education.
-                </p>
               </div>
 
               {/* Card 3: Consultation Topics */}

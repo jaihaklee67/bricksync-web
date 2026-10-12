@@ -91,7 +91,7 @@ export const AboutPage = ({ setCurrentView }) => {
         <div className="w-full max-w-[1440px] flex flex-col items-center pt-6 pb-12 sm:pb-16 px-4 sm:px-8">
           {/* Phones: live text so the heading stays readable */}
           <div className="sm:hidden text-center text-white pt-2 pb-4">
-            <h2 className="font-bold leading-tight text-[23px] whitespace-nowrap">BrickSync 3 Core Components</h2>
+            <h2 className="font-bold leading-tight text-[26px]">BrickSync<br />3 Core Components</h2>
             <p className="mt-1.5 text-[14px] leading-snug font-light">Connecting Physical Play and Digital Worlds through AI &amp; Real-Time Computing</p>
           </div>
           <img
