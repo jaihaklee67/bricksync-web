@@ -1,0 +1,8 @@
+/videos/*.m3u8
+  Content-Type: application/vnd.apple.mpegurl
+  Cache-Control: public, max-age=300
+/videos/*.ts
+  Content-Type: video/mp2t
+  Cache-Control: public, max-age=31536000, immutable
+/videos/intro/poster.webp
+  Cache-Control: public, max-age=86400

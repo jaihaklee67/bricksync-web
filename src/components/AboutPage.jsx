@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { Footer } from './Footer';
 
 const CORE_CARDS = [
@@ -27,6 +27,50 @@ const CORE_CARDS = [
     ],
   },
 ];
+
+
+// Adaptive (HLS) player: starts from a small low-quality chunk and steps up to 1080p, so it begins quickly without lowering the top quality.
+const HLS_JS = 'https://cdnjs.cloudflare.com/ajax/libs/hls.js/1.5.17/hls.min.js';
+const loadHlsJs = () =>
+  new Promise((resolve) => {
+    if (window.Hls) return resolve(window.Hls);
+    const el = document.createElement('script');
+    el.src = HLS_JS;
+    el.onload = () => resolve(window.Hls);
+    el.onerror = () => resolve(null);
+    document.head.appendChild(el);
+  });
+
+const AdaptiveVideo = ({ src, poster, className }) => {
+  const ref = useRef(null);
+  useEffect(() => {
+    const video = ref.current;
+    if (!video) return undefined;
+    let hls = null;
+    let started = false;
+    const start = async () => {
+      if (started) return;
+      started = true;
+      if (video.canPlayType('application/vnd.apple.mpegurl')) {
+        video.src = src; // Safari / iOS play HLS natively
+        return;
+      }
+      const Hls = await loadHlsJs();
+      if (Hls && Hls.isSupported()) {
+        hls = new Hls({ maxBufferLength: 20, startLevel: -1, capLevelToPlayerSize: false });
+        hls.loadSource(src);
+        hls.attachMedia(video);
+      }
+    };
+    if (!('IntersectionObserver' in window)) { start(); return undefined; }
+    const io = new IntersectionObserver((entries) => {
+      if (entries.some((e) => e.isIntersecting)) { start(); io.disconnect(); }
+    }, { rootMargin: '500px 0px' });
+    io.observe(video);
+    return () => { io.disconnect(); if (hls) hls.destroy(); };
+  }, [src]);
+  return <video ref={ref} controls playsInline preload="none" poster={poster} className={className} />;
+};
 
 export const AboutPage = ({ setCurrentView }) => {
   return (
@@ -135,12 +179,10 @@ export const AboutPage = ({ setCurrentView }) => {
 
           {/* 16:9 Video Player matching width of 3 cards above */}
           <div className="w-full aspect-video rounded-2xl md:rounded-3xl overflow-hidden bg-black/60 relative shadow-none">
-            <video
-              src="/images/Bricksync.mp4"
-              controls
-              playsInline
-              preload="metadata"
-              className="w-full h-full object-cover"
+            <AdaptiveVideo
+              src="/videos/intro/master.m3u8"
+              poster="/videos/intro/poster.webp"
+              className="w-full h-full object-contain bg-black"
             />
           </div>
         </div>
